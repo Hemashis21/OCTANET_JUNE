@@ -1,0 +1,153 @@
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff8f0;
+  color: #4b3b2b;
+  line-height: 1.6;
+}
+/* Container for navbar */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+/* NAVBAR */
+.navbar {
+  background: #bf5700;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+.logo {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+.nav-links li a:hover,
+.nav-links li a:focus {
+  color: #ffd580;
+  outline: none;
+}
+/* HERO SECTION */
+.hero {
+  background: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/035099f3-56ab-40b9-8e1c-0c19075d0196.png') center/cover no-repeat;
+  height: 320px;
+  border-radius: 16px;
+  margin: 2rem auto 3rem;
+  box-shadow: 0 6px 20px rgb(191 87 0 / 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+  text-align: center;
+  padding: 0 1rem;
+  max-width: 1200px;
+}
+/* INTRO */
+.intro {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #6b4a00;
+}
+/* DESTINATIONS GRID */
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+}
+/* CARD */
+.card {
+  background: #fff5e6;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgb(191 87 0 / 0.18);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.card:hover,
+.card:focus {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgb(191 87 0 / 0.3);
+  outline: none;
+}
+.card img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 1.3rem 1.5rem 2rem;
+}
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: #953800;
+}
+.card-desc {
+  font-size: 1rem;
+  color: #7c5e26;
+}
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #bf5700;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+/* Responsive typography and layout */
+@media (max-width: 600px) {
+  .logo {
+    font-size: 1.4rem;
+  }
+  .hero {
+    font-size: 1.8rem;
+    height: 220px;
+  }
+  main, .destinations-grid {
+    padding: 0 1rem;
+  }
+  .nav-links {
+    gap: 1rem;
+  }
+}
+
